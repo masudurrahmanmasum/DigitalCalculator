@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+   <div class="main_div">
+      <div class="container">     <!--main div start-->
+         <div class="heading">                <!--heading div start-->
+            <h1>CALCULATOR</h1>
+         </div>                  <!--heading div end-->
+         <div class="maincalc">  <!--button main div start-->
+            <div class="display">
+               <input type="text" id="beaut">
+            </div>
+            <div class="subcalc">   <!--button first row div-->
+               <input type="button" class="btn" value="C" id="but1" onclick="clearAll()">
+               <input type="button" class="btn" value="+/-" id="but2" onclick="getNumber('-')">
+               <input type="button" class="btn" value="%" id="but3" onclick="getNumber('%')">
+               <input type="button" class="btn" value="/" id="but4" onclick="getNumber('/')">
+            </div>
+      
+            <div class="subcalc">       <!--button second row div-->
+               <input type="button" class="btn" value="7" id="but5" onclick="getNumber(7)">
+               <input type="button" class="btn" value="8" id="but6" onclick="getNumber(8)">
+               <input type="button" class="btn" value="9" id="but7" onclick="getNumber(9)">
+               <input type="button" class="btn" value="*" id="but8" onclick="getNumber('*')">
+            </div>
+      
+            <div class="subcalc">              <!--button third row div-->
+               <input type="button" class="btn" value="4" id="but9" onclick="getNumber(4)">
+               <input type="button" class="btn" value="5" id="but10" onclick="getNumber(5)">
+               <input type="button" class="btn" value="6" id="but11" onclick="getNumber(6)">
+               <input type="button" class="btn" value="-" id="but12" onclick="getNumber('-')">
+            </div>
+      
+            <div class="subcalc">                <!--button fourth row div-->
+               <input type="button" class="btn" value="1" id="but13" onclick="getNumber(1)">
+               <input type="button" class="btn" value="2" id="but14" onclick="getNumber(2)">
+               <input type="button" class="btn" value="3" id="but15" onclick="getNumber(3)">
+               <input type="button" class="btn" value="+" id="but16" onclick="getNumber('+')">
+            </div>
+      
+            <div class="subcalc">                   <!--button fifth row div-->
+               <input type="button" class="btn" value="0" id="but17" onclick="getNumber(0)">
+               <input type="button" class="btn" value="." id="but18" onclick="getNumber('.')">
+               <input type="button" class="btn" value="DEL" id="but19" onclick="deleteOne()">
+               <input type="button" class="btn" value="=" id="but20" onclick="calculate()">
+            </div>
+      
+      
+         </div>        <!--button main div end-->
+        
+      
+      
+      </div>                   <!--main div end-->
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
